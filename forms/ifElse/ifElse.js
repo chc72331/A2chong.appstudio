@@ -7,18 +7,18 @@ let userTemperature = prompt('What\'s the current temperature (in Fahrenheit)?')
 // Establish an array that holds all the messages
 let messages = ['wear a warm coat, hat, scarf, and gloves.', 
   'wear a warm coat but you won\'t need a hat, scarf or gloves.', 
-  'wear your warmest coat, a warm hat, a scarf, and warm gloves', 
+  'wear your warmest coat, a warm hat, a scarf, and warm gloves.', 
   'wear a warm coat, hat and gloves.  Maybe a scarf too.']
 
-var messageOut
+
 if (userTemperature < 32 && userState == 'NE')
-  messageOut = messages[0]
+  var messageOut = messages[0]
 else if (userTemperature < 50 && userTemperature >= 32 && userState == 'NE')
-  messageOut = messages[1]
+  var messageOut = messages[1]
 else if (userTemperature < 50 && userTemperature >= 32 && userState == 'FL')
-  messageOut = messages[2]
+  var messageOut = messages[2]
 else if (userTemperature < 70 && userTemperature >= 50 && userState == 'FL')
-  messageOut = messages[3]
+  var messageOut = messages[3]
 else
   console.log('Go check your local weather station.')
 
