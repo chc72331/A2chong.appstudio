@@ -22,4 +22,5 @@ else if (userTemperature < 70 && userTemperature >= 50 && userState == 'FL')
 else
   console.log('Go check your local weather station.')
 
-console.log(messageOut)
+console.log(`${userFirstName} ${userLastName}, since it's ${userTemperature} degrees
+  here in ${userState}, you should ${messageOut}`)
