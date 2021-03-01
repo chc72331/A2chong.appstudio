@@ -1,4 +1,5 @@
 // Establish input some variables
+
 let newState = prompt('What STATE are you in (2 capitalized letters, e.g. "NE" or "FL")?')
 let newFirstName = prompt('What is your first name?')
 let newLastName = prompt('What is your last name?')
@@ -32,3 +33,4 @@ switch (true) {
 // Console Message on template literal
 console.log(`${newFirstName} ${newLastName}, since it's ${newTemperature} degrees
   here in ${newState}, you should ${messageNew}`)
+
