@@ -11,6 +11,7 @@ let messages2 = ['wear a warm coat, hat, scarf, and gloves.',
   'wear your warmest coat, a warm hat, a scarf, and warm gloves.', 
   'wear a warm coat, hat and gloves.  Maybe a scarf too.']
 
+// Make switch statements based on conditions
 var messageNew
 switch (true) {
   case (newTemperature < 32 && newState == 'NE'):
