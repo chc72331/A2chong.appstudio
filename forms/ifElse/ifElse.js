@@ -11,6 +11,7 @@ let messages = ['wear a warm coat, hat, scarf, and gloves.',
   'wear a warm coat, hat and gloves.  Maybe a scarf too.']
 
 
+// Ifelse statements to assign to the messageOut variable
 if (userTemperature < 32 && userState == 'NE')
   var messageOut = messages[0]
 else if (userTemperature < 50 && userTemperature >= 32 && userState == 'NE')
@@ -20,7 +21,9 @@ else if (userTemperature < 50 && userTemperature >= 32 && userState == 'FL')
 else if (userTemperature < 70 && userTemperature >= 50 && userState == 'FL')
   var messageOut = messages[3]
 else
-  console.log('Go check your local weather station.')
+  var messageOut = 'Go check your local weather station.'
 
+// Console Message on template literal
 console.log(`${userFirstName} ${userLastName}, since it's ${userTemperature} degrees
   here in ${userState}, you should ${messageOut}`)
+ 

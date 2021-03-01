@@ -25,6 +25,14 @@
             "ifElse",
             "ifElse.json"
           ]
+        },
+        {
+          "!type": "External",
+          "file": [
+            "forms",
+            "switch",
+            "switch.json"
+          ]
         }
       ],
       "configxml": null,
